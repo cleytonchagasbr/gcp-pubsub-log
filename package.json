@@ -1,6 +1,6 @@
 {
   "name": "gcp-pubsub-log",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Handle send pub-sub for logging",
   "repository": {
     "type": "git",
