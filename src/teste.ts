@@ -1,12 +1,12 @@
-import * as dotenv  from "dotenv";
+import * as dotenv from "dotenv";
 import { PubSubLogging } from './index';
 dotenv.config();
 
 
 async function test() {
- 
-    const pubsub = new PubSubLogging({ 
-        projectId: process.env.BIGQUERY_PROJECT_ID as string, 
+
+    const pubsub = new PubSubLogging({
+        projectId: process.env.BIGQUERY_PROJECT_ID as string,
         privateKey: process.env.BIGQUERY_PRIVATE_KEY as string,
         clientEmail: process.env.BIGQUERY_CLIENT_EMAIL as string,
     });
@@ -23,7 +23,7 @@ async function test() {
         action: "login"
     });
 
-    
+
     await pubsub.debugLogging({
         project: "project-dev",
         namespace: "local",
@@ -33,7 +33,7 @@ async function test() {
         },
         action: "logging"
     });
-    
+
 }
 
 test();
