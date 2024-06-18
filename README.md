@@ -1,6 +1,9 @@
 ## gcp-pubsub-log
 
 # Install
+
+https://www.npmjs.com/package/gcp-pubsub-log
+
 ```
 npm i --save gcp-pubsub-log
 ```
